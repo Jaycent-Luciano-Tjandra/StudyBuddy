@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPanelController">
+   <children>
+      <AnchorPane layoutX="226.0" layoutY="-4.0" prefHeight="901.0" prefWidth="1207.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button layoutX="1064.0" layoutY="31.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #ff4f58;" text="Sign Out" textFill="#2d2d65">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Button>
+            <ImageView fitHeight="87.0" fitWidth="102.0" layoutX="532.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="8.0">
+               <image>
+                  <Image url="@../../../../Documents/ss/Screen%20Shot%202023-11-16%20at%2023.06.10.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="42.0" layoutX="953.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/image-removebg-preview%20(4).png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="214.0" layoutY="104.0" minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="637.0">
+               <children>
+                  <SplitPane layoutX="16.0" layoutY="38.0" prefHeight="313.0" prefWidth="577.0">
+                     <items>
+                        <AnchorPane maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="428.0" prefWidth="454.0" style="-fx-background-color: #D4E3FF;">
+                           <children>
+                              <AnchorPane layoutX="24.0" layoutY="3.0" prefHeight="196.0" prefWidth="469.0">
+                                 <children>
+                                    <GridPane layoutY="14.0" prefHeight="164.0" prefWidth="403.0" AnchorPane.bottomAnchor="-37.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="103.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.33335367838544" minWidth="10.0" prefWidth="299.6666666666667" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <AnchorPane prefHeight="176.0" prefWidth="130.0" style="-fx-background-color: #4368E9;">
+                                             <children>
+                                                <ImageView fitHeight="117.0" fitWidth="120.0" layoutX="14.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../Downloads/timer/timerr.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                          <StackPane prefHeight="149.0" prefWidth="286.0" GridPane.columnIndex="1">
+                                             <children>
+                                                <AnchorPane fx:id="timerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D4E3FF;">
+                                                   <children>
+                                                      <GridPane layoutX="31.0" layoutY="40.0" prefHeight="151.33333333333334" prefWidth="286.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <columnConstraints>
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                         </columnConstraints>
+                                                         <rowConstraints>
+                                                            <RowConstraints maxHeight="137.33332316080728" minHeight="10.0" prefHeight="121.33334350585938" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="71.33331298828125" minHeight="10.0" prefHeight="42.666656494140625" vgrow="SOMETIMES" />
+                                                         </rowConstraints>
+                                                         <children>
+                                                            <GridPane>
+                                                               <columnConstraints>
+                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                               </columnConstraints>
+                                                               <rowConstraints>
+                                                                  <RowConstraints maxHeight="55.99999237060547" minHeight="4.666656494140625" prefHeight="26.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="120.00001017252605" minHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES" />
+                                                               </rowConstraints>
+                                                               <children>
+                                                                  <Text fill="#4368e9" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+                                                                  <Text fill="#4368e9" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+                                                                  <Text fill="#4368e9" layoutX="105.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seconds" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+                                                                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: B3C8EF;" GridPane.rowIndex="1">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                                                     </GridPane.margin>
+                                                                     <children>
+                                                                        <Text fx:id="hoursTimer" layoutX="12.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                                                                           <font>
+                                                                              <Font size="41.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane layoutX="25.0" layoutY="43.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: B3C8EF;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                                                     </GridPane.margin>
+                                                                     <children>
+                                                                        <Text fx:id="minutesTimer" layoutX="12.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                                                                           <font>
+                                                                              <Font size="41.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane layoutX="110.0" layoutY="28.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: B3C8EF;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                                                     </GridPane.margin>
+                                                                     <children>
+                                                                        <Text fx:id="secondsTimer" layoutX="12.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                                                                           <font>
+                                                                              <Font size="41.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </GridPane>
+                                                            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#unStart" prefHeight="9.0" prefWidth="150.0" style="-fx-background-color: #4368E9;" text="Cancel" textFill="#d4e3ff" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                         </children>
+                                                      </GridPane>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane fx:id="menuPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D4E3FF;">
+                                                   <children>
+                                                      <GridPane layoutX="43.0" layoutY="11.0" prefHeight="218.0" prefWidth="301.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <columnConstraints>
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                         </columnConstraints>
+                                                         <rowConstraints>
+                                                            <RowConstraints maxHeight="162.30538940429688" minHeight="10.0" prefHeight="140.19076538085938" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="77.80923461914062" minHeight="10.0" prefHeight="77.80923461914062" vgrow="SOMETIMES" />
+                                                         </rowConstraints>
+                                                         <children>
+                                                            <Button fx:id="buttonStart" mnemonicParsing="false" onAction="#Start" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #4368E9;" text="Start" textFill="#d4e3ff" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                            <GridPane prefHeight="144.0" prefWidth="300.0">
+                                                               <columnConstraints>
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="86.33330535888672" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.66669464111328" minWidth="10.0" prefWidth="199.66669464111328" />
+                                                               </columnConstraints>
+                                                               <rowConstraints>
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                               </rowConstraints>
+                                                               <children>
+                                                                  <Text fill="#4368e9" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours" GridPane.halignment="CENTER" />
+                                                                  <Text fill="#4368e9" layoutX="42.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                  <Text fill="#4368e9" layoutX="42.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seconds" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                  <ComboBox fx:id="secondsInput" layoutX="97.0" layoutY="50.0" prefHeight="25.0" prefWidth="124.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                  <ComboBox fx:id="minutesInput" layoutX="135.0" layoutY="85.0" prefHeight="25.0" prefWidth="124.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                  <ComboBox fx:id="hoursInput" layoutX="135.0" layoutY="50.0" prefHeight="25.0" prefWidth="124.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                                               </children>
+                                                            </GridPane>
+                                                         </children>
+                                                      </GridPane>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+            <VBox alignment="CENTER" layoutX="231.0" layoutY="469.0" prefHeight="262.0" prefWidth="575.0" style="-fx-background-color: #D4E3FF;">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/DB7EBC30-B949-440E-9A7D-21E2C4DBFC5B.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Label text=" music player">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets bottom="34.0" />
+                     </opaqueInsets>
+                  </Label>
+                  <Label fx:id="chooseMusic" onMouseClicked="#chooseMusic" text="choose your music" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#play" style="-fx-background-color: #4368E9;" text="play" textFill="#d4e3ff">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onMouseClicked="#pause" style="-fx-background-color: #4368E9;" text="pause" textFill="#d4e3ff">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button lineSpacing="3.0" mnemonicParsing="false" onMouseClicked="#stop" style="-fx-background-color: #4368E9;" text="replay" textFill="#d4e3ff">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Line endX="1397.0" endY="9.17446517944336" layoutX="42.0" layoutY="90.0" startX="-43.80942153930664" startY="9.174491882324219" stroke="#2d2d65" strokeWidth="4.0" />
+      <Label fx:id="dateLabel" layoutX="38.0" layoutY="21.0" text="Label" />
+      <Label fx:id="timeLabel" layoutX="215.0" layoutY="21.0" text="Label" />
+      <AnchorPane layoutY="101.0" prefHeight="801.0" prefWidth="225.0" style="-fx-background-color: #D4E3FF;" />
+      <VBox alignment="TOP_CENTER" layoutX="35.0" layoutY="159.0" prefHeight="723.0" prefWidth="136.0" style="-fx-background-color: #D4E3FF;">
+         <children>
+            <HBox prefHeight="31.0" prefWidth="136.0">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/0763DD50-93D1-4AA5-9AE8-706F730D1EA2.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#switchToCalendar" prefHeight="21.0" prefWidth="67.0" style="-fx-background-color: rgba(0, 0, 0, 0);" text="Calendar" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="136.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/B66AF1F4-686E-49DD-9C56-627EB7FC63FF.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" style="-fx-background-color: rgba(0, 0, 0, 0);" text="Timer">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="136.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/742B2F6C-F374-4F13-9C51-DEFFC335AFD2.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#switchToMenuFolder" style="-fx-background-color: rgba(0, 0, 0, 0);" text="Folder" />
+               </children>
+            </HBox>
+            <HBox prefHeight="32.0" prefWidth="102.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/25F0112D-4E8F-4DD7-B7E2-35949D67FA9B.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#switchToScreenTime" style="-fx-background-color: rgba(0, 0, 0, 0);" text="Screentime" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="102.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/022971E7-B910-43D1-A3BB-7A1874D181B8.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" style="-fx-background-color: rgba(0, 0, 0, 0);" text="Setting" />
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="40.0" />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>

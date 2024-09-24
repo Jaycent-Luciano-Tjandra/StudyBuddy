@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPanelController">
+   <children>
+      <AnchorPane layoutX="226.0" layoutY="-4.0" prefHeight="901.0" prefWidth="1207.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button layoutX="1064.0" layoutY="31.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #ff4f58;" text="Sign Out" textFill="#2d2d65">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Button>
+            <ImageView fitHeight="87.0" fitWidth="102.0" layoutX="532.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="8.0">
+               <image>
+                  <Image url="@../../../../Documents/ss/Screen%20Shot%202023-11-16%20at%2023.06.10.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="42.0" layoutX="953.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/image-removebg-preview%20(4).png" />
+               </image>
+            </ImageView>
+            <Text fill="#a8a7a7" layoutX="389.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You don’t have any folder" wrappingWidth="417.03253173828125">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="73.0" fitWidth="79.0" layoutX="1048.0" layoutY="755.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../private/var/folders/sl/v51ybxf93qg1vcy0y7t8r24m0000gn/T/com.apple.Photos.NSItemProvider/uuid=DB094FDF-D094-4224-A4F8-183C8939E313&amp;library=1&amp;type=1&amp;mode=1&amp;loc=true&amp;cap=true.jpeg/Image%2002-12-23%20at%2016.06.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="14.0" layoutY="123.0" mnemonicParsing="false" onAction="#switchToHome" style="-fx-background-color: rgba(0, 0, 0, 0);" text="&lt;">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Line endX="1397.0" endY="9.17446517944336" layoutX="42.0" layoutY="90.0" startX="-43.80942153930664" startY="9.174491882324219" stroke="#2d2d65" strokeWidth="4.0" />
+      <Label fx:id="dateLabel" layoutX="38.0" layoutY="21.0" text="Label" />
+      <Label fx:id="timeLabel" layoutX="215.0" layoutY="21.0" text="Label" />
+      <AnchorPane layoutY="101.0" prefHeight="801.0" prefWidth="225.0" style="-fx-background-color: #D4E3FF;" />
+      <VBox alignment="TOP_CENTER" layoutX="35.0" layoutY="159.0" prefHeight="723.0" prefWidth="136.0" style="-fx-background-color: #D4E3FF;">
+         <children>
+            <HBox prefHeight="31.0" prefWidth="136.0">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/0763DD50-93D1-4AA5-9AE8-706F730D1EA2.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#switchToCalendar" prefHeight="21.0" prefWidth="67.0" style="-fx-background-color: rgba(0, 0, 0, 0);" text="Calendar" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="136.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/B66AF1F4-686E-49DD-9C56-627EB7FC63FF.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#switchToTimer" style="-fx-background-color: rgba(0, 0, 0, 0);" text="Timer" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="136.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/742B2F6C-F374-4F13-9C51-DEFFC335AFD2.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" style="-fx-background-color: rgba(0, 0, 0, 0);" text="Folder">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="32.0" prefWidth="102.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/25F0112D-4E8F-4DD7-B7E2-35949D67FA9B.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#switchToScreenTime" style="-fx-background-color: rgba(0, 0, 0, 0);" text="Screentime" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="102.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image%20studybuddy/022971E7-B910-43D1-A3BB-7A1874D181B8.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" style="-fx-background-color: rgba(0, 0, 0, 0);" text="Setting" />
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="40.0" />
+         </opaqueInsets>
+      </VBox>
+      <ImageView fitHeight="45.0" fitWidth="55.0" layoutX="89.0" layoutY="48.0" onMouseClicked="#switchToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../private/var/folders/sl/v51ybxf93qg1vcy0y7t8r24m0000gn/T/com.apple.Photos.NSItemProvider/uuid=0955D78B-BE8D-46D5-BFAA-4A8DA6A205F0&amp;library=1&amp;type=1&amp;mode=1&amp;loc=true&amp;cap=true.jpeg/Image%2003-12-23%20at%2016.45.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

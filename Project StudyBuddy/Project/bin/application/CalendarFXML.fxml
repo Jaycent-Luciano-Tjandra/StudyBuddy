@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Tooltip?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="application.CalendarController"
+            stylesheets="@styles.css">
+
+    <top>
+        <HBox alignment="CENTER" spacing="10">
+            <Button text="Prev Year" onAction="#handlePrevYearButton"/>
+            <Button text="Prev Month" onAction="#handlePrevMonthButton"/>
+            <Label fx:id="monthLabel"/>
+            <Button text="Next Month >>" onAction="#handleNextMonthButton"/>
+            <Button text="Next Year >>" onAction="#handleNextYearButton"/>
+        </HBox>
+    </top>
+
+    <center>
+        <GridPane fx:id="calendarGridPane" alignment="CENTER"/>
+    </center>
+
+    <bottom>
+        <VBox alignment="CENTER" spacing="10">
+            <HBox spacing="10">
+                <TextArea fx:id="eventTextArea" prefHeight="100" promptText="Add Event"/>
+                <Button text="Add Event" onAction="#handleAddEventButton"/>
+            </HBox>
+            
+        </VBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* Styling for general buttons */
+.button {
+    -fx-font-size: 14px;
+    -fx-background-color: #D4E3FF; /* Green background color */
+    -fx-text-fill: black; /* White text color */
+}
+
+/* Styling for labels */
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333; /* Dark gray text color */
+}
+
+/* Styling for the calendar grid pane */
+#calendarGridPane {
+    -fx-hgap: 5;
+    -fx-vgap: 5;
+}
+
+/* Styling for buttons on hover */
+.button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+/* Styling for buttons within the calendar grid */
+#calendarGridPane .button {
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-max-width: 40px;
+    -fx-max-height: 40px;
+}
+
+/* Styling for date buttons */
+.dateButton {
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-max-width: 40px;
+    -fx-max-height: 40px;
+    -fx-background-color: #D4E3FF; /* Default background color for date buttons */
+    -fx-text-fill: black; /* Default text color for date buttons */
+}
+
+/* Styling for date buttons when clicked */
+.dateButton:pressed {
+    -fx-background-color: #3498db; /* Change background color when clicked */
+    -fx-text-fill: white; /* Change text color when clicked */
+}
+
+
+/* Styling for the event text area */
+#eventTextArea {
+    -fx-font-size: 14px;
+}
+
+/* Styling for the event text area when focused */
+#eventTextArea:focused {
+    -fx-border-color: #3498db; /* Blue border color when focused */
+}
+
+/* Styling for the event text area when disabled */
+#eventTextArea:disabled {
+    -fx-opacity: 0.7; /* Reduce opacity for disabled state */
+}
